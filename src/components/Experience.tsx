@@ -2,15 +2,15 @@ import React from "react";
 
 function Experience() {
   return (
-    <div className="w-full h-full bg-neutral-900 my-6 py-10">
-      <div className="justify-center flex text-4xl font-bold">Experience</div>
+    <div className="w-full h-full  my-6 py-10">
+      <div className="justify-center flex text-4xl font-bold mb-6">Experience</div>
       <div className="justify-center flex">
         <div className="max-w-4xl mx-auto">
           <div>
-            <div className="text-2xl font-bold underline">
+            <div className="text-2xl mb-2 font-bold underline">
               Software developer Intern
             </div>
-            <div className="underline">PTC Software Private Ltd</div>
+            <div className="underline mb-2">PTC Software Private Ltd</div>
             <div>
               <ul className="list-disc pl-5">
                 <li>
@@ -60,9 +60,10 @@ function Experience() {
               </ul>
             </div>
           </div>
+          <br />
           <div>
-            <div className="text-2xl font-bold underline">Java programmer</div>
-            <div className="underline">CodeSoft</div>
+            <div className="text-2xl font-bold mb-2 underline">Java programmer</div>
+            <div className="underline mb-2">CodeSoft</div>
             <div>
               <ul className="list-disc pl-5">
                 <li>
@@ -86,3 +87,4 @@ function Experience() {
 }
 
 export default Experience;
+

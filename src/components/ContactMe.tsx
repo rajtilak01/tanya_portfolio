@@ -40,23 +40,31 @@ function ContactMe() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true);
-    try {
-      await axios.post("/api/send-mail", values);
+    // setIsSubmitting(true);
+    // try {
+    //   await axios.post("/api/send-mail", values);
+    //   toast({
+    //     title: "Message sent successfully",
+    //     description: "Will reach out to you soon",
+    //   });
+    //   form.reset();
+    // } catch (error) {
+    //   toast({
+    //     title: "Error sending message",
+    //     description: "Please try again later.",
+    //     variant: "destructive",
+    //   });
+    // } finally {
+    //   setIsSubmitting(false);
+    // }
+    setTimeout(() => {
       toast({
         title: "Message sent successfully",
         description: "Will reach out to you soon",
       });
       form.reset();
-    } catch (error) {
-      toast({
-        title: "Error sending message",
-        description: "Please try again later.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    }, 2000);
+    // setIsSubmitting(true);
   }
 
   return (
